@@ -1,8 +1,34 @@
-HELP.md
+# ===================================================================
+# Secret Files - MOST IMPORTANT
+# ===================================================================
+# Ignore the properties file that contains database passwords, API keys, and JWT secrets.
+# This file should NEVER be committed to a public repository.
+src/main/resources/application.properties
+
+
+# ===================================================================
+# Build Artifacts & Dependencies
+# ===================================================================
+# Ignore compiled output, packaged JARs, and other build artifacts.
 target/
+HELP.md
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+
+# ===================================================================
+# Log Files
+# ===================================================================
+# Ignore log files generated during application runs.
+*.log
+logs/
+
+
+# ===================================================================
+# IDE Specific Files
+# ===================================================================
+# These files are specific to a developer's local environment and should not be shared.
 
 ### STS ###
 .apt_generated
